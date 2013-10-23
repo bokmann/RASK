@@ -1,4 +1,5 @@
 Bundler.require(:default, :test)
+require File.expand_path('app/environment_key')
 
 require 'simplecov'
 SimpleCov.start do
@@ -6,7 +7,7 @@ SimpleCov.start do
   add_filter "/minitest/"
 end
 
-ENV["APP_ENV"] = "test"
+ENV[ENVIRONMENT_KEY] = "test"
 
 require File.expand_path('app/app')
 
