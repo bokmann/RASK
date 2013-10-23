@@ -1,0 +1,11 @@
+development:
+  file: log/development.txt
+  level: debug
+
+test:
+  file: log/test.txt
+  level: info
+
+production:
+  file: log/production.txt
+  level: error

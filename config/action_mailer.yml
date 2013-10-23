@@ -1,0 +1,30 @@
+# example config to get it working almost out-of-the-box with
+# gmail, even if you are using "google apps for your domain".
+development:
+  address: smtp.gmail.com
+  port: 587
+  domain: <your domain>
+  user_name: <your email>
+  password: <your password>
+  authentication: plain
+  enable_starttls_auto: true
+
+test:
+  address: smtp.gmail.com
+  port: 587
+  domain: <your domain>
+  user_name: <your email>
+  password: <your password>
+  authentication: plain
+  enable_starttls_auto: true
+
+production:
+  address: smtp.gmail.com
+  port: 587
+  domain: <your domain>
+  user_name: <your email>
+  password: <your password>
+  authentication: plain
+  enable_starttls_auto: true
+
+

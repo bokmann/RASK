@@ -1,0 +1,42 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.0.0)
+      i18n (~> 0.6, >= 0.6.4)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    atomic (1.1.14)
+    awesome_print (1.2.0)
+    global (0.0.2)
+      activesupport
+    i18n (0.6.5)
+    minitest (4.7.5)
+    minitest_should (0.3.1)
+    multi_json (1.8.2)
+    rake (10.1.0)
+    require_all (1.3.1)
+    ruby-progressbar (1.2.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
+    thread_safe (0.1.3)
+      atomic
+    tzinfo (0.3.38)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  awesome_print
+  global
+  minitest
+  minitest_should
+  rake
+  require_all
+  ruby-progressbar
+  simplecov
+  tzinfo

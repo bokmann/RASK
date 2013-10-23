@@ -1,0 +1,6 @@
+Contributing to RASK
+============ == ====
+
+Contributions are welcome, but please don't be offended if I don't take your pullup request that includes the latest version of SalesForcey-Whiz-Bang-Connector-Glue.  I'm trying to keep this project small, but convenient and opinionated on things like directory structure, testing, etc.
+
+In that spirit, I hope most contributions come in the form of a page on the github wiki, with titles like "How to use this with ActionMailer", and "Easy Setup for ActiveRecord", and "Retrieving Data from Redis", and so on.

@@ -1,0 +1,8 @@
+.bundle
+.DS_Store
+tmp/
+bin/
+log/*.txt
+coverage/
+vendor/bundle
+.ruby-version
