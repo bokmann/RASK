@@ -1,13 +1,14 @@
 # there are a million useful things in active_support,
 # in particular cache and notifications... but we dont
 # assume you want them.
+require File.expand_path('app/environment_key')
 require 'active_support/time'
 require 'active_support/inflector'
 
 
 
 # load environment-dependent config.
-Global.environment = ENV["RAKE_ENV"] || "development"
+Global.environment = ENV[ENVIRONMENT_KEY] || "development"
 Global.config_directory = "config"
 
 # require our environment-specific stuff.

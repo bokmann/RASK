@@ -1,7 +1,9 @@
 require 'rubygems'
 require 'bundler'
 
-environment = ENV["RAKE_ENV"] || "development"
+require File.expand_path('app/environment_key')
+
+environment = ENV[ENVIRONMENT_KEY] || "development"
 
 Bundler.require(:default, environment.to_s)
 

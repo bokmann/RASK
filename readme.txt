@@ -31,7 +31,7 @@ Supporting Different Environments:
 
 When you ran that last task, it told you it was running in the development environment. you can run in production like this:
 
-APP_ENV=production rake hello
+RAKE_ENV=production rake hello
 
 now that you've run it twice in two different environments, go look in the log folder.  cat out the values of the two logs. Go look at the Application#hello method to see the logging line that output the one message to development.
 
@@ -42,6 +42,10 @@ First, each environment has its own ruby file in config/environments.  If you wa
 Second, if you just need configuration data for a new feature, you can add it to a yml file under config.  Any yml file you add here will have its values by environment available at Global.<filename>.<propertyname>/  This is courtesy of the very cool 'Global' gem.
 
 To support each environment, you can also add a group to the Gemfile.  Any group with the current environment name will be automatically loaded.
+
+
+Environment Key
+If you don't like the name RAKE_ENV, you can change it in one spot.  Perhaps you want to have several apps coexisting, or make the key name MYCOOLAPP_ENV, or something similar... just open the app/environment_key.rb file and change it.
 
 
 Logging
