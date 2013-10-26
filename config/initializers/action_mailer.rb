@@ -19,6 +19,10 @@
 
 # ActionMailer::Base.perform_deliveries = true
 # ActionMailer::Base.raise_delivery_errors = true
+
+
+# you could do this here, but you might be better off defining this
+# in the environment-specific initializers.
 # ActionMailer::Base.delivery_method = :smtp
 
 # would love to just do this, but the keys need to be symbols.
