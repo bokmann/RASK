@@ -5,6 +5,7 @@ require 'simplecov'
 SimpleCov.start do
   add_filter "/test/"
   add_filter "/minitest/"
+  add_filter "/vendor/"
 end
 
 ENV[ENVIRONMENT_KEY] = "test"
