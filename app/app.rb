@@ -4,6 +4,7 @@
 # during initialization.  Perhaps the logger could be pulled out
 # of App and created beforehand.
 require File.expand_path('app/bootstrap')
+require 'logger'
 
 
 # Define our base Application Class
