@@ -103,6 +103,9 @@ end
 
 group 'test' do
   # https://github.com/seattlerb/minitest
+  # if I unlock this, turn breaks, and for some reason bundler
+  # reverts active_support to 3.2.something.  I'm willing to
+  # drop turn, wtf with active_aupport?
   gem "minitest", "4.7.5"
   # https://github.com/citrus/minitest_should
   gem 'minitest_should'
