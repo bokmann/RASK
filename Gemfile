@@ -19,7 +19,6 @@ gem 'ruby-progressbar'
 # https://github.com/rails/rails/tree/master/activesupport
 # There is a bunch of neat stuff in activesupport usable as application components.
 gem "activesupport"
-gem "tzinfo"
 
 
 # I endorse these products and/or services
@@ -104,7 +103,7 @@ end
 
 group 'test' do
   # https://github.com/seattlerb/minitest
-  gem "minitest"
+  gem "minitest", "4.7.5"
   # https://github.com/citrus/minitest_should
   gem 'minitest_should'
   # https://github.com/colszowka/simplecov
