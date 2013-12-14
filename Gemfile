@@ -23,6 +23,13 @@ gem "activesupport"
 
 # I endorse these products and/or services
 
+# in order to use pry, check out the project's .irbrc file,
+# and this blog entry about using project-level .irbrc config:
+# http://samuelmullen.com/2010/04/irb-global-local-irbrc/
+#gem "pry"
+#gem "pry-doc"
+
+
 # we use actionmailer with rask a lot
 #gem "actionmailer"
 

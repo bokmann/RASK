@@ -1,4 +1,4 @@
-# We bootstrap before definig the app class so that the application has
+# We bootstrap before defining the app class so that the application has
 # access to all of the config and initialization data.
 # This works well, except for the fact that I'd love to use App.logger
 # during initialization.  Perhaps the logger could be pulled out
