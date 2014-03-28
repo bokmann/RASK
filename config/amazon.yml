@@ -1,0 +1,9 @@
+development:
+  access_key:
+    AKIAI32HETZ2KRTDFLOA
+  secret_key:
+    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
+  queue_region:
+    us-east-1
+  queue_name:
+    test_queue

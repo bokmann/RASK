@@ -20,6 +20,7 @@ gem 'ruby-progressbar'
 # There is a bunch of neat stuff in activesupport usable as application components.
 gem "activesupport"
 
+gem 'propono'
 
 # I endorse these products and/or services
 
