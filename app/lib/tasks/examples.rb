@@ -1,14 +1,24 @@
-desc "publishes whatever message you pass in, with a datetime stamp"
-task :publish, [:message] => :environment do |t, args|
-  Propono.publish(Global.amazon.queue_name, "(#{Time.now.to_s}): #{args[:message]}").join
+# Feel free to delete this in your projects.  This just shows you
+# how to define some rake tasks and how to do some common things,
+# like instantiate the app, use rake's command-line params, and
+# use the built-in progress-bar library.
+
+desc "says \"hello <name>\" - Name is optional."
+task :hello, [:name] => :environment do |t, args|
+  app = App.new
+  name = args[:name] || "World"
+  app.hello(name)
 end
 
-desc "opens a listener waiting for messages"
-task :listen => :environment do
-  Propono.config.application_name = "rask-listener"
-  puts "listening to \'#{Global.amazon.queue_name}\' as \'#{Propono.config.application_name}\'"
-  Propono.listen_to_queue(Global.amazon.queue_name) do |message|
-    puts "#{Time.now.to_s}: #{message}"
+desc "demonstrates the progress bar"
+task :progress => :environment do
+
+  puts "calculating the mass of the Universe..."
+  p = ProgressBar.create(:title => "Contemplating...", :total => 50)
+  50.times do
+    p.increment
+    sleep 0.1
   end
+  puts "done"
 end
 
