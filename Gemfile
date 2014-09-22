@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby '1.9.3'
+ruby '2.1.2'
 
 # https://github.com/jimweirich/rake
 # Thanks Jim!
