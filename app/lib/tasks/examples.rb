@@ -13,12 +13,16 @@ end
 desc "demonstrates the progress bar"
 task :progress => :environment do
 
-  puts "calculating the mass of the Universe..."
+  message = "calculating the mass of the Universe..."
+  App.logger.info message
+  puts message
   p = ProgressBar.create(:title => "Contemplating...", :total => 50)
   50.times do
     p.increment
     sleep 0.1
   end
-  puts "done"
+  message = "done"
+  App.logger.info message
+  puts message
 end
 
