@@ -1,6 +1,13 @@
 source "https://rubygems.org"
 
-ruby '2.1.2'
+ruby '2.2.0'
+
+# had to move awesome_print above activesupport due to a load dependency
+# issue.  Hoping this gets resolved soon.
+group 'development' do
+  # https://github.com/michaeldv/awesome_print
+  gem "awesome_print"
+end
 
 # https://github.com/jimweirich/rake
 # Thanks Jim!
@@ -103,10 +110,6 @@ gem "activesupport"
 
 # you can use environment-specific gemsets and
 # they will be automatically loaded
-group 'development' do
-  # https://github.com/michaeldv/awesome_print
-  gem "awesome_print"
-end
 
 group 'test' do
   # https://github.com/seattlerb/minitest
