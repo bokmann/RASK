@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby '2.2.0'
+ruby '2.2.3'
 
 # had to move awesome_print above activesupport due to a load dependency
 # issue.  Hoping this gets resolved soon.
