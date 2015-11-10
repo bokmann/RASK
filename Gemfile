@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby '2.2.0'
+ruby '2.2.3'
 
 # had to move awesome_print above activesupport due to a load dependency
 # issue.  Hoping this gets resolved soon.
@@ -79,7 +79,7 @@ gem "activesupport"
 
 # Seriously - the stuff that composes Rails is modular and super-cool!
 # https://github.com/rails/rails/tree/master/activemodel
-#gem 'active_model'
+# gem 'activemodel'
 
 # Because sometimes, you just need to fake it till you make it
 # https://github.com/emmanueloga/ffaker
@@ -87,9 +87,9 @@ gem "activesupport"
 
 # This will require more documentation to explain.
 # https://github.com/rails/rails/tree/master/activerecord
-#gem 'active_record'
+# gem 'activerecord'
 #gem 'mysql2'
-#gem 'sqlite'
+# gem 'sqlite3'
 
 # There are many state machines for ruby, this is my favorite.
 # https://github.com/aasm/aasm
